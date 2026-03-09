@@ -1,0 +1,21 @@
+<div class="onboarding-container">
+    <div class="onboarding-content">
+
+        <img [src]="slides[currentIndex].image" class="image" />
+
+        <div class="dots">
+            <span *ngFor="let slide of slides; let i = index" class="dot" [class.active]="i === currentIndex">
+            </span>
+        </div>
+
+        <div class="text-content">
+            <h2>{{ slides[currentIndex].title }}</h2>
+            <p>{{ slides[currentIndex].description }}</p>
+        </div>
+
+        <app-button (click)="next()">
+            {{ currentIndex === slides.length - 1 ? 'Começar' : 'Próximo' }}
+        </app-button>
+
+    </div>
+</div>

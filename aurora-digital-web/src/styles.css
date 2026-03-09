@@ -1,0 +1,22 @@
+:root {
+    /* Brand */
+    --color-primary: #4B3FDC;
+    --color-primary-light: #6D5DED;
+    --color-primary-soft: #8F7BFF;
+
+    /* Accent / Highlight */
+    --color-highlight: #93BEFF;
+
+    /* Background variations */
+    --bg-main: #FFFFFF;
+    --bg-soft: #E4EAFF;
+    --bg-card: #CCE0FF;
+
+    /* Text */
+    --text-primary: #1E1E2F;
+    --text-secondary: #333333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
