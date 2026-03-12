@@ -1,1 +1,33 @@
-<p>login works!</p>
+<div class="login-content">
+    <div class="back-button">
+        <app-back-button></app-back-button>
+    </div>
+    <p class="paragraph-login">Bem-vindo de volta</p>
+    <div class="form-group">
+
+        <label>Email</label>
+        <div class="input-wrapper">
+            <span class="icon">✉</span>
+            <input type="email">
+        </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Senha</label>
+        <div class="input-wrapper">
+            <span class="icon">🔒</span>
+            <input type="password" placeholder="••••••••">
+            <span class="icon-right">👁</span>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <app-button label="Entrar" (click)="goToLogin()"></app-button>
+        <p class="login-helper-text">Novo por aqui?
+            <a routerLink="/onboarding" routerLinkActive="active" class="login-link">Criar conta</a>
+        </p>
+    </div>
+</div>
